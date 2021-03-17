@@ -7,5 +7,4 @@ if __name__ == '__main__':
     while True:
         i += 1
         print(i)
-
         pass
