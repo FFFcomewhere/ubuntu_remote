@@ -1,9 +1,10 @@
 import numpy as np
 
 
-A = np.array([1,2])
-print(A)
-
-print("hello world")
-print("first update")
-print("second update")
+if __name__ == '__main__':
+    print("hello world")
+    i = 0
+    while True:
+        i += 1
+        print(i)
+        pass
