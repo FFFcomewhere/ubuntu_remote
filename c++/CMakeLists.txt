@@ -1,3 +1,3 @@
+cmake_minimum_required(VERSION 2.8.9)
 proect(HELLO)
-set(SRC_LIST test.c)
-add_executable(hello $SRC_LIST{})
+add_executable(HELLO $SRC_LIST{})
