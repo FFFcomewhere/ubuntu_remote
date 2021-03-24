@@ -1,3 +1,3 @@
-cmake_minimum_required(VERSION 2.8.9)
-project (HELLO)
-add_executable(HELLO test.cpp)
+cmake_minimum_required(VERSION 3.10)
+project (test)
+add_executable(test test1.cpp test2.cpp)
