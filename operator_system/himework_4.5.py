@@ -1,5 +1,3 @@
-import pandas as pd
-
 if __name__ == '__main__':
     #path = "hightemp.txt"
     path = "hightemp - 副本.txt"
@@ -9,7 +7,7 @@ if __name__ == '__main__':
 
     if (op == "head"):
         """前N行"""
-        print("请输入你想输出的行数N")
+        print("请输入你想    输出的行数N")
         with open(path, "r", encoding="UTF-8") as fp:
             file = list(fp.readlines())
 
