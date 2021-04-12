@@ -1,6 +1,3 @@
-import math
-
-
 if __name__ == '__main__':
      #path = "hightemp.txt"
     path = "hightemp - 副本.txt"
@@ -13,16 +10,12 @@ if __name__ == '__main__':
     else:
         contents = file.readlines()
 
-    print(len(contents))
+
+    file_list = list(contents)
 
     N = int(input())
-    for i in range(math.ceil(len(contents) / N)):
-        print(i)
-        if((i+1)*N >= len(contents)):
-            for j in range(i*N, len(contents)):
-                print(contents[j])
-            print("-----------------------------")
+    for i in range(len(file_list) // N):
+        if((i+1)*N >= len(file_list)):
+            print(file_list[i * N: len(file_list)])
         else:
-            for j in range(i*N, (i + 1) * N):
-                print(contents[j])
-            print("-----------------------------")
+            print(file_list[i * N: (i + 1) * N])
