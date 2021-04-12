@@ -1,3 +1,4 @@
+import math
 if __name__ == '__main__':
      #path = "hightemp.txt"
     path = "hightemp - 副本.txt"
@@ -11,11 +12,24 @@ if __name__ == '__main__':
         contents = file.readlines()
 
 
-    file_list = list(contents)
+
 
     N = int(input())
-    for i in range(len(file_list) // N):
-        if((i+1)*N >= len(file_list)):
-            print(file_list[i * N: len(file_list)])
+    files = []
+    for i in range(math.ceil(len(contents) / N)):
+        if((i+1)*N >= len(contents)):
+            files.append(contents[i * N: len(contents)])
+
         else:
-            print(file_list[i * N: (i + 1) * N])
+            files.append(contents[i * N: (i + 1) * N])
+
+
+    for i in range(len(files)):
+        k = ""
+        for j in files[i]:
+            k = k + j
+
+        with open(str(i)+".txt", "w", encoding="UTF-8") as f:
+            f.write(k)
+
+
