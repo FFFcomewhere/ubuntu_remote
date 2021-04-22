@@ -1,6 +1,6 @@
 if __name__ == '__main__':
     #path = "hightemp.txt"
-    path = "hightemp - 副本.txt"
+    path = "hightemp.txt"
 
     print("输入head为输出前N行\n输入tail为输出后N行")
     op = input()

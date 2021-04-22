@@ -2,7 +2,7 @@ import pandas as pd
 
 if __name__ == '__main__':
     path = "hightemp.txt"
-    #path = "hightemp - 副本.txt"
+    #path = "hightemp.txt"
 
     with open(path, "r", encoding="UTF-8") as fp:
         file = fp.readlines()

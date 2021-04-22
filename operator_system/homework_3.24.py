@@ -1,6 +1,6 @@
 if __name__ == '__main__':
      #path = "hightemp.txt"
-    path = "hightemp - 副本.txt"
+    path = "hightemp.txt"
 
     data_col1 = []
     data_col2 = []
