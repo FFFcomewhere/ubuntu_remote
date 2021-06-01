@@ -43,4 +43,5 @@ if __name__ == '__main__':
         # for i in L:
         #     print(i[0])
 
-        print(sorted(dir_col1.items(), key=lambda x:x[1], reverse=True))
+        for i in sorted(dir_col1.items(), key=lambda x:x[1], reverse=True):
+            print(i)
