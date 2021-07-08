@@ -1,5 +1,6 @@
 import numpy as np
 import cv2 as cv
+import matplotlib
 src = np.array([[0, 255, 255, 0],
                 [255, 0, 0, 255],
                 [255, 255, 0, 255],
